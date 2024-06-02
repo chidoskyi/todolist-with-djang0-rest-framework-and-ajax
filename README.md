@@ -1,1 +1,1 @@
-# todolist-with-djang0-rest-framework-and-ajax
+# todolist-with-django-rest-framework-and-ajax
