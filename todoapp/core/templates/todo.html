@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do with django rest framework</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            margin-top: 150px;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .wrapper{
+            width: 30%;
+            border: 2px solid #ccc;
+            margin: auto;
+            padding: 20px;
+
+        }
+
+        .search{
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .search input{
+            width: 80%;
+            height: 40px;
+            padding-left: 10px;
+            border-radius: 6px;
+            border: 1px solid #dbdbdb;
+        }
+        .search button{
+            width: 20%;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .tasks{
+            margin-top: 30px;
+        }
+
+        .task{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #dbdbdb;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        .task:last-child{
+            border-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        span{
+            padding-left: 10px;
+        }
+
+
+        .child{
+            width: 80%;
+        }
+
+        .child input{
+            margin: 0;
+            cursor: pointer;
+        }
+
+
+        .icons{
+            display: flex;
+            gap: 10px;
+        }
+
+        .icon{
+            padding: 10px;
+            background-color: lightcoral;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+        <div class="search">
+            <form action="" method="get">
+            <input type="text" placeholder="Enter Todo">
+            <button type="submit">Add</button>
+        </div>
+        <div class="tasks">
+            <div class="task">
+                <div class="child">
+                    <input type="checkbox" name="" id="">
+                    <span>whte milk</span>
+                </div>
+                <div class="icons">
+                    <div class="icon">
+                        <i class="fas fa-pencil-square"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="task">
+                <div class="child">
+                    <input type="checkbox" name="" id="">
+                    <span>whte milk</span>
+                </div>
+                <div class="icons">
+                    <div class="icon">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="task">
+                <div class="child">
+                    <input type="checkbox" name="" id="">
+                    <span>whte milk</span>
+                </div>
+                <div class="icons">
+                    <div class="icon">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="task">
+                <div class="child">
+                    <input type="checkbox" name="" id="">
+                    <span>whte milk</span>
+                </div>
+                <div class="icons">
+                    <div class="icon">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
